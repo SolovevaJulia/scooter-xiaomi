@@ -1,34 +1,131 @@
 .header
    padding: 40px 140px
+   position: relative
+   &-ellipse1
+      position: absolute
+      z-index: 2
+      opacity: 0.2
+      left: 590px
+      top: 0px
+      width: 447px
+   &-ellipse2
+      position: absolute
+      z-index: 2
+      opacity: 0.5
+      right: 0px
+      top: 0px
+      width: 860px
+   &-ellipse3
+      position: absolute
+      z-index: 2
+      opacity: 0.3
+      right: 0px
+      top: 0px
+      width: 860px
+   &-ellipse4
+      position: absolute
+      z-index: 2
+      opacity: 0.5
+      left: 0px
+      top: 600px
+      width: 860px
+   &-img
+      position: absolute
+      top: 0
+      right: 0
+      z-index: 2
    &-top
       display: flex
       align-items: center
       justify-content: space-between
-      margin-bottom: 147px
+      margin-bottom: 90px
       &-menu
          display: flex
          list-style: none
-         margin-left: -80px
+         margin-left: -250px
          &-item
-            font-size: 14px
+            font-size: 12px
             margin-right: 40px
          &-button
             padding: 15px 35px
-            font-size: 16px
+            font-size: 14px
             font-weight: bold
             color: #151515
             background-color: #F1F1F1
             border-radius: 65px
             border: none
+            cursor: pointer
+            &:hover
+               background: red
    &-cover
       &-heading
          font-weight: 600
-         font-size: 78px
+         font-size: 68px
          line-height: 100%
          margin-bottom: 50px
       &-text
          font-weight: 600
-         font-size: 30px
+         font-size: 24px
          line-height: 120%
          color: $orange-text
-         margin-bottom: 80px
+         margin-bottom: 60px
+      &-button
+         position: relative
+         margin-bottom: 248px
+         &-black
+            font-weight: bold
+            font-size: 14px
+            line-height: 150%
+            color: $text-color
+            padding: 15px 35px 11px 145px
+            border-radius: 65px
+            border: 3px solid $text-color
+            background-color: transparent
+         &-white
+            position: absolute
+            left: 0
+            color: #151515
+            font-weight: bold
+            font-size: 14px
+            line-height: 150%
+            padding: 15px 35px
+            background-color: $text-color
+            border-radius: 65px
+            border: none
+   &-benefits
+      &-heading
+         font-weight: 500
+         font-size: 43px
+         line-height: 110%
+         margin-bottom: 60px
+.benefits
+   &-wrapper
+      display: flex
+      justify-content: space-between
+   &-card
+      width: 320px
+      margin-bottom: 28px
+      &-title
+         font-weight: 600
+         font-size: 18px
+         line-height: 120%
+         margin-bottom: 30px
+      &-text
+         font-weight: normal
+         font-size: 12px
+         line-height: 150%
+   &-img
+      display: flex
+      justify-content: space-between
+      margin-bottom: 120px
+      &-left
+         background: linear-gradient(0deg, rgba(232, 181, 119, 0.3), rgba(232, 181, 119, 0.3)), url(.png)
+         background-blend-mode: soft-light, normal
+         border-radius: 15px
+         max-width: 700px
+      &-right
+         background: linear-gradient(0deg, rgba(232, 181, 119, 0.3), rgba(232, 181, 119, 0.3)), url(.png)
+         background-blend-mode: soft-light, normal
+         border-radius: 15px
+         max-width: 340px
+         max-height: 280px
