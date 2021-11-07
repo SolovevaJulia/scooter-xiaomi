@@ -9,9 +9,6 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <section>
-    <div class="overlay"></div>
-  </section>
   <header class="header">
     <img class="header-ellipse1" src="img/ellipse1.png" alt="">
     <img class="header-ellipse2" src="img/ellipse2.png" alt="">
@@ -42,15 +39,15 @@
         <h2 class="header-benefits-heading">Мощная батарея и экономичный расход<br>заряда позволяют преодолевать<br>расстояния до 45 км</h2>
         <div class="benefits-wrapper">
           <div class="benefits-card">
-            <h3 class="benefits-card-title">Три режима скорости</h3>
-            <p class="benefits-card-text">Три режима езды позволяют почуствовать себя комфортно в любой ситуации. Режим «S» увеличитвает скорость, если  опаздываете на работу. Во время прогулки по парку активируйте режим «D». Включите режим «Пешеход», когда двигаетесь по оживлённой улице.</p>
+            <button class="benefits-card-title active-title">Три режима скорости</button>
+            <p class="benefits-card-text active-text">Три режима езды позволяют почуствовать себя комфортно в любой ситуации. Режим «S» увеличитвает скорость, если  опаздываете на работу. Во время прогулки по парку активируйте режим «D». Включите режим «Пешеход», когда двигаетесь по оживлённой улице.</p>
           </div>
           <div class="benefits-card">
-            <h3 class="benefits-card-title">Система восстановления энергии</h3>
+            <button class="benefits-card-title">Система восстановления энергии</button>
             <p class="benefits-card-text">Во время торможения и движения по инерции система преобразовывает кинетическую энергию в электрическую, позволяя увеличить общий запас хода самоката.</p>
           </div>
           <div class="benefits-card">
-            <h3 class="benefits-card-title">Мощная батарея</h3>
+            <button class="benefits-card-title">Мощная батарея</button>
             <p class="benefits-card-text">Самокат оснащен аккумулятором емкостью 12 800 мАч. Это позволяет преодолевать расстояния до 45 км без подзарядки.</p>
           </div>
         </div>
@@ -61,5 +58,32 @@
       </div>
     </div>
   </header>
+  <section class="banner">
+    <div class="container banner-container">
+      <img class="banner-logo" src="img/logo.svg" alt="">
+      <h2 class="banner-title">Высокая скорость передвижения</h2>
+      <span class="banner-text">Двигатель мощностью до 600 Вт позволяет развивать скорость до 25 км/ч.
+      </span>
+    </div>
+  </section>
+  <section class="design">
+    <div class="container">
+      <h2 class="design-title">Лаконичный современный дизайн, в котором нет ничего лишнего</h2>
+      <div class="design-wrapper">
+        <div class="design-card-left">
+          <h3 class="design-card-title">Минималистичный дизайн</h3>
+          <p class="design-card-text">Рама, компоненты и аксессуары скутера выдержаны в едином стиле, где удобство
+            пользователя выходит на первое место. Одного прикосновения достаточно, чтобы запустить самокат.
+          </p>
+        </div>
+        <div class="design-card-right">
+          <h3 class="design-card-title">Удобная панель управления</h3>
+          <p class="design-card-text">Удобно расположенные элементы управления. Отображение типов данных в реальном времени:
+            скорость, режим, заряд аккумулятора, состояние блокировки и другая информация.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>

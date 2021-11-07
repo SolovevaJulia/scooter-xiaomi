@@ -1,5 +1,5 @@
 .header
-   padding: 40px 140px
+
    position: relative
    &-ellipse1
       position: absolute
@@ -34,6 +34,7 @@
       top: 0
       right: 0
       z-index: 2
+      max-width: 1050px
    &-top
       display: flex
       align-items: center
@@ -101,19 +102,28 @@
 .benefits
    &-wrapper
       display: flex
-      justify-content: space-between
+      // justify-content: space-between
    &-card
-      width: 320px
+      width: 355px
       margin-bottom: 28px
       &-title
-         font-weight: 600
-         font-size: 18px
+         width: 355px
+         background-color: transparent
+         border: none
+         border-bottom: 2px solid #8f7a74
+         color: #8f7a74
+         text-align: left
+         font-weight: 500
+         font-size: 15px
          line-height: 120%
-         margin-bottom: 30px
+         margin-bottom: 20px
+         padding: 0 0 15px 30px
       &-text
+         color: #8f7a74
          font-weight: normal
          font-size: 12px
          line-height: 150%
+         padding: 0 0 0 30px
    &-img
       display: flex
       justify-content: space-between
@@ -129,3 +139,11 @@
          border-radius: 15px
          max-width: 340px
          max-height: 280px
+.active
+   &-title
+      border-bottom: 2px solid $orange-text
+      color: $text-color
+      padding: 0 20px 15px 0
+   &-text
+      color: $text-color
+      padding: 0
