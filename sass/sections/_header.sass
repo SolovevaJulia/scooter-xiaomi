@@ -1,5 +1,5 @@
 .header
-   position: relative
+   padding: 38px 0 120px 0
    &-ellipse1
       position: absolute
       z-index: 2
@@ -39,6 +39,8 @@
       align-items: center
       justify-content: space-between
       margin-bottom: 90px
+      z-index: 5
+      position: relative
       &-menu
          display: flex
          list-style: none
@@ -58,6 +60,8 @@
             &:hover
                background: red
    &-cover
+      z-index: 5
+      position: relative
       &-heading
          font-weight: 600
          font-size: 68px
@@ -93,6 +97,8 @@
             border-radius: 65px
             border: none
    &-benefits
+      z-index: 5
+      position: relative
       &-heading
          font-weight: 500
          font-size: 43px
@@ -102,10 +108,10 @@
    &-wrapper
       display: flex
    &-card
-      width: 355px
+      width: 365px
       margin-bottom: 28px
       &-title
-         width: 355px
+         width: 365px
          background-color: transparent
          border: none
          border-bottom: 2px solid #8f7a74
@@ -125,7 +131,6 @@
    &-img
       display: flex
       justify-content: space-between
-      margin-bottom: 120px
       &-left
          background: linear-gradient(0deg, rgba(232, 181, 119, 0.3), rgba(232, 181, 119, 0.3)), url(.png)
          background-blend-mode: soft-light, normal

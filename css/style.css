@@ -25,10 +25,15 @@ body:before {
   z-index: 1;
 }
 
-.container {
+section {
   position: relative;
   z-index: 3;
-  padding: 40px 140px;
+}
+
+.container {
+  width: 1130px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 button {
@@ -40,7 +45,7 @@ ul {
 }
 
 .header {
-  position: relative;
+  padding: 38px 0 120px 0;
 }
 .header-ellipse1 {
   position: absolute;
@@ -86,6 +91,8 @@ ul {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 90px;
+  z-index: 5;
+  position: relative;
 }
 .header-top-menu {
   display: flex;
@@ -108,6 +115,10 @@ ul {
 }
 .header-top-menu-button:hover {
   background: red;
+}
+.header-cover {
+  z-index: 5;
+  position: relative;
 }
 .header-cover-heading {
   font-weight: 600;
@@ -148,6 +159,10 @@ ul {
   border-radius: 65px;
   border: none;
 }
+.header-benefits {
+  z-index: 5;
+  position: relative;
+}
 .header-benefits-heading {
   font-weight: 500;
   font-size: 43px;
@@ -159,11 +174,11 @@ ul {
   display: flex;
 }
 .benefits-card {
-  width: 355px;
+  width: 365px;
   margin-bottom: 28px;
 }
 .benefits-card-title {
-  width: 355px;
+  width: 365px;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #8f7a74;
@@ -185,7 +200,6 @@ ul {
 .benefits-img {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 120px;
 }
 .benefits-img-left {
   background: linear-gradient(0deg, rgba(232, 181, 119, 0.3), rgba(232, 181, 119, 0.3)), url(.png);
@@ -212,11 +226,11 @@ ul {
 }
 
 .banner {
+  padding: 120px 0 120px 0;
   background: url(../img/banner-bg.jpg);
-  margin-bottom: 70px;
 }
-.banner-container {
-  padding: 118px 800px 120px 140px;
+.banner-wrapper {
+  width: 387px;
 }
 .banner-logo {
   margin-bottom: 150px;
@@ -231,8 +245,12 @@ ul {
   font-weight: normal;
   font-size: 14px;
   line-height: 150%;
+  width: 358px;
 }
 
+.design {
+  padding: 100px 0 100px 0;
+}
 .design-title {
   font-weight: 500;
   font-size: 43px;
@@ -241,42 +259,46 @@ ul {
   max-width: 70%;
   margin-bottom: 60px;
 }
-.design-wrapper {
+
+.card-wrapper {
   display: flex;
   justify-content: space-between;
 }
-.design-card-left {
+.card-left {
   background: url(../img/design-card.jpg);
-  width: 500px;
-  height: 500px;
+  width: 530px;
+  height: 530px;
   border-radius: 25px;
   padding: 50px;
   display: flex;
   flex-direction: column;
   justify-content: end;
 }
-.design-card-right {
+.card-right {
   background: url(../img/design-card-right.jpg);
-  width: 500px;
-  height: 500px;
+  width: 530px;
+  height: 530px;
   border-radius: 25px;
   padding: 50px;
   display: flex;
   flex-direction: column;
   justify-content: end;
 }
-.design-card-title {
+.card-title {
   margin-bottom: 20px;
   font-weight: 600;
   font-size: 16px;
   line-height: 120%;
 }
-.design-card-text {
+.card-text {
   font-weight: normal;
   font-size: 12px;
   line-height: 150%;
 }
 
+.safety {
+  padding-bottom: 100px;
+}
 .safety-heading {
   color: #FF4C0D;
   font-weight: 500;
@@ -288,7 +310,7 @@ ul {
   display: flex;
 }
 .safety-card {
-  width: 265px;
+  width: 270px;
   margin-bottom: 28px;
 }
 .safety-card-title {
@@ -355,7 +377,7 @@ ul {
   margin-bottom: 50px;
 }
 .mobile-descr {
-  padding-top: 120px;
+  margin-top: 120px;
 }
 .mobile-img {
   width: 400px;
