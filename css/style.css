@@ -113,9 +113,6 @@ ul {
   border: none;
   cursor: pointer;
 }
-.header-top-menu-button:hover {
-  background: red;
-}
 .header-cover {
   z-index: 5;
   position: relative;
@@ -418,4 +415,224 @@ ul {
 .mobile-button-text-bottom {
   font-weight: 600;
   font-size: 16px;
+}
+
+.brand {
+  background: url(../img/brand.jpg);
+  padding: 120px 0 120px 0;
+  position: relative;
+  background-size: cover;
+}
+.brand-wrapper {
+  width: 460px;
+}
+.brand-logo {
+  width: 60px;
+  height: 39px;
+  margin-bottom: 145px;
+}
+.brand-title {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 110%;
+  color: #FF4C0D;
+  margin-bottom: 30px;
+}
+.brand-about-top {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #151515;
+  margin-bottom: 10px;
+}
+.brand-about-bottom {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #151515;
+}
+.brand-dots-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  height: 90px;
+  top: 250px;
+  right: 140px;
+}
+.brand-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #c0bab3;
+  border-radius: 50%;
+}
+.brand .black {
+  background-color: #151515;
+}
+
+.questions {
+  padding: 115px 0 115px 0;
+}
+.questions-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.questions-wrapper-heading {
+  display: flex;
+  flex-direction: column;
+  width: 415px;
+  align-items: flex-start;
+}
+.questions-wrapper-heading-title {
+  font-weight: 500;
+  font-size: 43px;
+  line-height: 110%;
+  color: #FF4C0D;
+  margin-bottom: 20px;
+}
+.questions-wrapper-heading-text {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+  margin-bottom: 10px;
+  width: 280px;
+}
+.questions-wrapper-heading-button {
+  background-color: #F1F1F1;
+  border-radius: 65px;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  padding: 15px 30px;
+  margin-top: 45px;
+}
+.questions-wrapper-right {
+  width: 640px;
+}
+.questions-wrapper-right-item {
+  margin-bottom: 40px;
+}
+.questions-wrapper-right-item-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  margin-bottom: 10px;
+}
+.questions-wrapper-right-item-line {
+  width: 100px;
+  height: 2px;
+  background-color: #FF4C0D;
+  margin-bottom: 10px;
+}
+.questions-wrapper-right-item-text {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+}
+
+.price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 59px;
+  background: #151515;
+  border-radius: 15px;
+}
+.price-wrapper-img {
+  position: absolute;
+  right: 35px;
+  top: -100px;
+  width: 950px;
+}
+.price-wrapper-left {
+  width: 78%;
+}
+.price-wrapper-left-title {
+  font-weight: 500;
+  font-size: 43px;
+  line-height: 110%;
+  margin-bottom: 10px;
+}
+.price-wrapper-left-cost {
+  font-size: 26px;
+  color: #FF4C0D;
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+.price-wrapper-left-buy {
+  background-color: #FF4C0D;
+  border-radius: 65px;
+  padding: 15px 35px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  border: none;
+  color: #F1F1F1;
+}
+.price-wrapper-left-button {
+  position: relative;
+  margin-bottom: 195px;
+}
+.price-wrapper-left-button-black {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 150%;
+  color: #F1F1F1;
+  padding: 15px 35px 11px 145px;
+  border-radius: 65px;
+  border: 3px solid #F1F1F1;
+  background-color: transparent;
+}
+.price-wrapper-left-button-white {
+  position: absolute;
+  left: 0;
+  color: #151515;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 150%;
+  padding: 15px 35px;
+  background-color: #F1F1F1;
+  border-radius: 65px;
+  border: none;
+}
+.price-wrapper-right {
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+}
+.price-wrapper-right-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  margin-bottom: 29px;
+}
+.price-wrapper-right-item {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.footer {
+  padding: 60px;
+}
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-wrapper-left {
+  display: flex;
+  flex-direction: column;
+}
+.footer-wrapper-right {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+.footer-wrapper-text {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */
