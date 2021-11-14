@@ -1,10 +1,17 @@
 .price
+    &-line
+        position: absolute
+        top: -170px
+        z-index: 2
+        width: 1470px
     &-wrapper
         display: flex
         justify-content: space-between
         padding: 59px 
         background: #151515
         border-radius: 15px
+        position: relative
+        z-index: 3
 
         &-img
             position: absolute
@@ -23,7 +30,7 @@
             &-cost
                 font-size: 26px
                 color: $orange-text
-                font-weight: 600
+                font-weight: 500
                 margin-bottom: 35px
             &-buy
                 background-color: $orange-text

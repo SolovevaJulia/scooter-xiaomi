@@ -1,5 +1,19 @@
 .safety
    padding-bottom: 100px
+   &-ellipse
+      &-top
+         position: absolute
+         z-index: 1
+      // &-bottom
+      //    position: absolute
+      //    z-index: 1
+      //    right: 0
+      //    bottom: 0
+   &-line
+      position: absolute
+      bottom: -190px
+      right: 0
+      z-index: 4
    &-heading
       color: $orange-text
       font-weight: 500
@@ -8,6 +22,8 @@
       margin-bottom: 55px
    &-wrapper
       display: flex
+      position: relative
+      z-index: 3
    &-card
       width: 270px
       margin-bottom: 28px
@@ -28,7 +44,7 @@
          font-weight: normal
          font-size: 12px
          line-height: 150%
-         padding: 0 0 0 19px
+         padding: 0 20px 0 20px
    &-active
       &-title
          border-bottom: 2px solid $orange-text
@@ -42,10 +58,14 @@
       display: flex
       justify-content: space-between
       margin-bottom: 60px
+      position: relative
       &-left
          border-radius: 30px
          max-width: 690px
+         z-index: 5
+         position: relative
       &-right
          border-radius: 30px
          max-width: 350px
          height: 290px
+         z-index: 3

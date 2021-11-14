@@ -67,7 +67,7 @@
          line-height: 100%
          margin-bottom: 50px
       &-text
-         font-weight: 600
+         font-weight: 500
          font-size: 24px
          line-height: 120%
          color: $orange-text
@@ -135,12 +135,20 @@
          background-blend-mode: soft-light, normal
          border-radius: 15px
          max-width: 700px
+         z-index: 5
       &-right
          background: linear-gradient(0deg, rgba(232, 181, 119, 0.3), rgba(232, 181, 119, 0.3)), url(.png)
          background-blend-mode: soft-light, normal
          border-radius: 15px
          max-width: 340px
          max-height: 280px
+   
+   &-line 
+      position: absolute
+      bottom: -120px
+      left: -180px
+      z-index: 4
+
 .active
    &-title
       border-bottom: 2px solid $orange-text

@@ -124,7 +124,7 @@ ul {
   margin-bottom: 50px;
 }
 .header-cover-text {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 24px;
   line-height: 120%;
   color: #FF4C0D;
@@ -203,6 +203,7 @@ ul {
   background-blend-mode: soft-light, normal;
   border-radius: 15px;
   max-width: 700px;
+  z-index: 5;
 }
 .benefits-img-right {
   background: linear-gradient(0deg, rgba(232, 181, 119, 0.3), rgba(232, 181, 119, 0.3)), url(.png);
@@ -210,6 +211,12 @@ ul {
   border-radius: 15px;
   max-width: 340px;
   max-height: 280px;
+}
+.benefits-line {
+  position: absolute;
+  bottom: -120px;
+  left: -180px;
+  z-index: 4;
 }
 
 .active-title {
@@ -228,6 +235,7 @@ ul {
 }
 .banner-wrapper {
   width: 387px;
+  z-index: 2;
 }
 .banner-logo {
   margin-bottom: 150px;
@@ -244,9 +252,18 @@ ul {
   line-height: 150%;
   width: 358px;
 }
+.banner-ellipse {
+  position: absolute;
+  top: -420px;
+  right: 0;
+}
 
 .design {
   padding: 100px 0 100px 0;
+}
+.design-wrapper {
+  position: relative;
+  z-index: 3;
 }
 .design-title {
   font-weight: 500;
@@ -255,6 +272,28 @@ ul {
   color: #FF4C0D;
   max-width: 70%;
   margin-bottom: 60px;
+}
+.design-line-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.design-line-bottom {
+  position: absolute;
+  top: 560px;
+  left: 0;
+}
+.design-ellipse-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+.design-ellipse-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
 .card-wrapper {
@@ -296,6 +335,16 @@ ul {
 .safety {
   padding-bottom: 100px;
 }
+.safety-ellipse-top {
+  position: absolute;
+  z-index: 1;
+}
+.safety-line {
+  position: absolute;
+  bottom: -190px;
+  right: 0;
+  z-index: 4;
+}
 .safety-heading {
   color: #FF4C0D;
   font-weight: 500;
@@ -305,6 +354,8 @@ ul {
 }
 .safety-wrapper {
   display: flex;
+  position: relative;
+  z-index: 3;
 }
 .safety-card {
   width: 270px;
@@ -328,7 +379,7 @@ ul {
   font-weight: normal;
   font-size: 12px;
   line-height: 150%;
-  padding: 0 0 0 19px;
+  padding: 0 20px 0 20px;
 }
 .safety-active-title {
   border-bottom: 2px solid #FF4C0D;
@@ -343,19 +394,37 @@ ul {
   display: flex;
   justify-content: space-between;
   margin-bottom: 60px;
+  position: relative;
 }
 .safety-img-left {
   border-radius: 30px;
   max-width: 690px;
+  z-index: 5;
+  position: relative;
 }
 .safety-img-right {
   border-radius: 30px;
   max-width: 350px;
   height: 290px;
+  z-index: 3;
 }
 
+.mobile-ellipse-top {
+  position: absolute;
+  right: 0;
+  bottom: -150px;
+  z-index: 3;
+}
+.mobile-ellipse-bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+}
 .mobile-wrapper {
   display: flex;
+  position: relative;
+  z-index: 4;
 }
 .mobile-wrapper-title {
   width: 525px;
@@ -473,6 +542,12 @@ ul {
 .questions {
   padding: 115px 0 115px 0;
 }
+.questions-ellipse {
+  position: absolute;
+  left: 0;
+  top: -350px;
+  opacity: 0.8;
+}
 .questions-wrapper {
   display: flex;
   justify-content: space-between;
@@ -531,12 +606,20 @@ ul {
   line-height: 150%;
 }
 
+.price-line {
+  position: absolute;
+  top: -170px;
+  z-index: 2;
+  width: 1470px;
+}
 .price-wrapper {
   display: flex;
   justify-content: space-between;
   padding: 59px;
   background: #151515;
   border-radius: 15px;
+  position: relative;
+  z-index: 3;
 }
 .price-wrapper-img {
   position: absolute;
@@ -556,7 +639,7 @@ ul {
 .price-wrapper-left-cost {
   font-size: 26px;
   color: #FF4C0D;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 35px;
 }
 .price-wrapper-left-buy {
@@ -615,7 +698,7 @@ ul {
 }
 
 .footer {
-  padding: 60px;
+  padding: 60px 0 40px 0;
 }
 .footer-wrapper {
   display: flex;

@@ -1,5 +1,8 @@
 .design
    padding: 100px 0 100px 0
+   &-wrapper
+      position: relative
+      z-index: 3
    &-title
       font-weight: 500
       font-size: 43px
@@ -7,6 +10,26 @@
       color: $orange-text
       max-width: 70%
       margin-bottom: 60px
+   &-line
+      &-top
+         position: absolute
+         top: 0
+         right: 0
+      &-bottom
+         position: absolute
+         top: 560px
+         left: 0
+   &-ellipse
+      &-top
+         position: absolute
+         top: 0
+         right: 0
+         z-index: 2
+      &-bottom
+         position: absolute
+         top: 0
+         left: 0
+         z-index: 2
    
 .card
    &-wrapper
