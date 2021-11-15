@@ -717,6 +717,8 @@ ul {
 }
 .price-wrapper-left {
   width: 78%;
+  position: relative;
+  z-index: 3;
 }
 .price-wrapper-left-title {
   font-weight: 500;
@@ -806,4 +808,32 @@ ul {
   font-size: 12px;
   line-height: 150%;
   margin-bottom: 20px;
+}
+
+body.light-mode {
+  background-color: #F1F1F1;
+}
+body.light-mode .header-top-menu {
+  color: #151515;
+}
+body.light-mode .header-cover-heading {
+  color: #FF4C0D;
+}
+body.light-mode .header-cover-text {
+  color: #151515;
+}
+body.light-mode .header-cover-button-white {
+  color: #151515;
+  padding: 15px 145px 15px 35px;
+  border-radius: 65px;
+  border: 3px solid #151515;
+  background-color: transparent;
+}
+body.light-mode .header-cover-button-black {
+  position: absolute;
+  color: #F1F1F1;
+  padding: 15px 35px;
+  border: 3px solid #151515;
+  background-color: #151515;
+  left: 102px;
 }/*# sourceMappingURL=style.css.map */

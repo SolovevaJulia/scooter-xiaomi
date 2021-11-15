@@ -1,4 +1,4 @@
-console.warn('slider.js подключен')
+console.warn('slider.js подключен');
 
 const elem = document.querySelector('.main-carousel');
     
