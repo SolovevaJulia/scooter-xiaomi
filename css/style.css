@@ -215,7 +215,7 @@ ul {
 .benefits-line {
   position: absolute;
   bottom: -120px;
-  left: -180px;
+  left: -216px;
   z-index: 4;
 }
 
@@ -540,6 +540,8 @@ ul {
 }
 
 .review {
+  position: relative;
+  z-index: 99;
   padding-top: 100px;
 }
 .review-ellipse {
@@ -551,6 +553,7 @@ ul {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 2;
 }
 .review-title {
   font-style: normal;
@@ -558,30 +561,70 @@ ul {
   font-size: 43px;
   line-height: 110%;
   color: #FF4C0D;
-  margin-bottom: 30px;
-}
-.review-wrapper-card {
-  background-color: #151515;
-  border-radius: 15px;
-  width: 460px;
-  padding: 38px;
+  margin-bottom: 50px;
 }
 .review-wrapper-card-title {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18x;
   line-height: 120%;
   margin-bottom: 20px;
 }
 .review-wrapper-card-line {
-  width: 100px;
+  width: 80px;
   height: 3px;
   background-color: #FF4C0D;
   margin-bottom: 20px;
 }
 .review-wrapper-card-text {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 150%;
+}
+.review-buttons {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 99;
+  margin-top: 50px;
+}
+.review-buttons-left-btn {
+  padding: 15px 35px;
+  background-color: #F1F1F1;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  border-radius: 65px;
+  border: none;
+  color: #151515;
+}
+.review-buttons-right {
+  display: flex;
+  justify-content: space-between;
+  width: 123px;
+}
+.review-buttons-right-prev {
+  width: 54px;
+  height: 54px;
+  border: none;
+  border-radius: 50%;
+  padding: 14px;
+  background-color: #F1F1F1;
+}
+.review-buttons-right-next {
+  width: 54px;
+  height: 54px;
+  border: none;
+  border-radius: 50%;
+  padding: 14px;
+  background-color: #FF4C0D;
+}
+
+.carousel-cell {
+  width: 415px;
+  margin-left: 30px;
+  background-color: #151515;
+  border-radius: 15px;
+  padding: 38px;
 }
 
 .questions {
@@ -653,9 +696,9 @@ ul {
 
 .price-line {
   position: absolute;
-  top: -170px;
+  top: -159px;
   z-index: 2;
-  width: 1470px;
+  width: 1349px;
 }
 .price-wrapper {
   display: flex;
