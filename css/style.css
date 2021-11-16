@@ -79,12 +79,21 @@ ul {
   top: 600px;
   width: 860px;
 }
-.header-img {
+.header-bike-white {
+  display: block;
   position: absolute;
   top: 0;
   right: 0;
   z-index: 2;
   max-width: 1050px;
+}
+.header-bike-black {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 1050px;
 }
 .header-top {
   display: flex;
@@ -93,6 +102,12 @@ ul {
   margin-bottom: 90px;
   z-index: 5;
   position: relative;
+}
+.header-top-logo-white {
+  display: block;
+}
+.header-top-logo-orange {
+  display: none;
 }
 .header-top-menu {
   display: flex;
@@ -445,9 +460,15 @@ ul {
 .mobile-descr {
   margin-top: 120px;
 }
-.mobile-img {
+.mobile-img-white {
   width: 400px;
   height: 575px;
+  display: block;
+}
+.mobile-img-black {
+  width: 400px;
+  height: 575px;
+  display: none;
 }
 .mobile-button {
   display: flex;
@@ -467,10 +488,23 @@ ul {
   border-radius: 10px;
   border: none;
 }
-.mobile-button-img {
+.mobile-button-img-black {
   margin-right: 6px;
   width: 24px;
   height: 30px;
+  display: block;
+}
+.mobile-button-img-logo {
+  margin-right: 6px;
+  width: 24px;
+  height: 30px;
+  display: block;
+}
+.mobile-button-img-white {
+  margin-right: 6px;
+  width: 24px;
+  height: 30px;
+  display: none;
 }
 .mobile-button-text {
   display: flex;
@@ -639,6 +673,8 @@ ul {
 .questions-wrapper {
   display: flex;
   justify-content: space-between;
+  position: relative;
+  z-index: 3;
 }
 .questions-wrapper-heading {
   display: flex;
@@ -672,6 +708,8 @@ ul {
 }
 .questions-wrapper-right {
   width: 640px;
+  position: relative;
+  z-index: 3;
 }
 .questions-wrapper-right-item {
   margin-bottom: 40px;
@@ -709,11 +747,19 @@ ul {
   position: relative;
   z-index: 3;
 }
-.price-wrapper-img {
+.price-wrapper-img-white {
   position: absolute;
-  right: 35px;
+  right: -130px;
   top: -100px;
   width: 950px;
+  display: block;
+}
+.price-wrapper-img-black {
+  position: absolute;
+  right: -130px;
+  top: -100px;
+  width: 950px;
+  display: none;
 }
 .price-wrapper-left {
   width: 78%;
@@ -811,10 +857,22 @@ ul {
 }
 
 body.light-mode {
-  background-color: #F1F1F1;
+  background-color: #E0E0E0;
+}
+body.light-mode .header-bike-white {
+  display: none;
+}
+body.light-mode .header-bike-black {
+  display: block;
 }
 body.light-mode .header-top-menu {
   color: #151515;
+}
+body.light-mode .header-top-logo-white {
+  display: none;
+}
+body.light-mode .header-top-logo-orange {
+  display: block;
 }
 body.light-mode .header-cover-heading {
   color: #FF4C0D;
@@ -836,4 +894,100 @@ body.light-mode .header-cover-button-black {
   border: 3px solid #151515;
   background-color: #151515;
   left: 102px;
+  z-index: 3;
+}
+body.light-mode .header-benefits-heading {
+  color: #151515;
+}
+body.light-mode .design-title {
+  color: #151515;
+}
+body.light-mode .mobile-wrapper-text {
+  color: #151515;
+}
+body.light-mode .mobile-button-apple {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+body.light-mode .mobile-button-google {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+body.light-mode .mobile-button-img-black {
+  display: none;
+}
+body.light-mode .mobile-button-img-white {
+  display: block;
+}
+body.light-mode .mobile-img-white {
+  width: 400px;
+  height: 575px;
+  display: none;
+}
+body.light-mode .mobile-img-black {
+  width: 400px;
+  height: 575px;
+  display: block;
+}
+body.light-mode .review-wrapper-card {
+  background-color: #F1F1F1;
+}
+body.light-mode .review-wrapper-card-title {
+  color: #151515;
+}
+body.light-mode .review-wrapper-card-line {
+  background-color: #151515;
+}
+body.light-mode .review-wrapper-card-text {
+  color: #151515;
+}
+body.light-mode .questions-wrapper-heading-text {
+  color: #151515;
+}
+body.light-mode .questions-wrapper-right-item-title {
+  color: #151515;
+}
+body.light-mode .questions-wrapper-right-item-text {
+  color: #151515;
+}
+body.light-mode .price-wrapper {
+  background-color: #F1F1F1;
+}
+body.light-mode .price-wrapper-img-white {
+  display: none;
+}
+body.light-mode .price-wrapper-img-black {
+  display: block;
+}
+body.light-mode .price-wrapper-left-title {
+  color: #151515;
+}
+body.light-mode .price-wrapper-left-button-black {
+  border: 3px solid #151515;
+  color: #151515;
+}
+body.light-mode .price-wrapper-left-button-white {
+  background-color: #151515;
+  color: #F1F1F1;
+}
+body.light-mode .price-wrapper-right-title {
+  color: #151515;
+}
+body.light-mode .price-wrapper-right-item {
+  color: #151515;
+}
+body.light-mode .footer-wrapper-text {
+  color: #151515;
+}
+body.light-mode .active-title {
+  color: #FF4C0D;
+}
+body.light-mode .active-text {
+  color: #151515;
+}
+body.light-mode .safety-active-title {
+  color: #FF4C0D;
+}
+body.light-mode .safety-active-text {
+  color: #151515;
 }/*# sourceMappingURL=style.css.map */
