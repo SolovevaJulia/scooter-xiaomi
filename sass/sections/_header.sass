@@ -74,24 +74,10 @@
          line-height: 120%
          color: $orange-text
          margin-bottom: 60px
-      &-button
-         position: relative
-         margin-bottom: 248px
-         &-black
-            @include button
-            color: $text-color
-            padding: 15px 35px 11px 145px
-            border: 3px solid $text-color
-            background-color: transparent
-         &-white
-            @include button
-            position: absolute
-            left: 0
-            color: #151515
-            padding: 15px 35px
-            background-color: $text-color
+
    &-benefits
       @include common-setting
+      margin-top: 248px
       &-heading
          margin-bottom: 60px
          @include large-text
@@ -140,3 +126,10 @@
          @include img-setting
          bottom: -120px
          left: -216px
+
+.swich-button
+   position: relative
+   &-black
+      @include swich-button-black
+   &-white
+      @include swich-button-white

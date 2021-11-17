@@ -49,30 +49,6 @@
                 border: none
                 color: $text-color
 
-            &-button
-                position: relative
-                margin-bottom: 195px
-                &-black
-                    font-weight: bold
-                    font-size: 14px
-                    line-height: 150%
-                    color: $text-color
-                    padding: 15px 35px 11px 145px
-                    border-radius: 65px
-                    border: 3px solid $text-color
-                    background-color: transparent
-                &-white
-                    position: absolute
-                    left: 0
-                    color: #151515
-                    font-weight: bold
-                    font-size: 14px
-                    line-height: 150%
-                    padding: 15px 35px
-                    background-color: $text-color
-                    border-radius: 65px
-                    border: none
-
         &-right
             width: 22%
             display: flex
@@ -88,3 +64,11 @@
                 @include average-text
                 margin-bottom: 15px
                 text-align: left
+
+// .swich-button
+//     position: relative
+//     margin-bottom: 195px
+//     &-black
+//         @include swich-button-black
+//     &-white
+//         @include swich-button-white

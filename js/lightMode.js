@@ -1,12 +1,17 @@
-const btn = document.querySelector('.header-cover-button-white');
 
-btn.addEventListener('click', function() {
-    document.body.classList.add('light-mode');
+const btn = document.querySelectorAll('.swich-button-white');
+
+btn.forEach(item => {
+    item.addEventListener('click', function() {
+        document.body.classList.add('light-mode');
+    });
 });
 
 
-const btnBlack = document.querySelector('.header-cover-button-black');
+const btnBlack = document.querySelectorAll('.swich-button-black');
 
-btnBlack.addEventListener('click', function() {
-    document.body.classList.remove('light-mode');
+btnBlack.forEach(item => {
+    item.addEventListener('click', function() {
+        document.body.classList.remove('light-mode');
+    });
 });
