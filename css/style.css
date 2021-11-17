@@ -149,7 +149,6 @@ ul {
 .header-benefits {
   position: relative;
   z-index: 3;
-  margin-top: 248px;
 }
 .header-benefits-heading {
   margin-bottom: 60px;
@@ -175,6 +174,7 @@ ul {
   font-size: 14px;
   line-height: 120%;
   margin-bottom: 20px;
+  margin-top: 248px;
   padding: 0 0 15px 30px;
 }
 .header-benefits-card-title-active {
@@ -220,6 +220,7 @@ ul {
 
 .swich-button {
   position: relative;
+  margin-bottom: 248px;
 }
 .swich-button-black {
   font-size: 14px;
@@ -859,6 +860,7 @@ body.light-mode .swich-button-white {
   border-radius: 65px;
   border: 3px solid #151515;
   background-color: transparent;
+  position: relative;
 }
 body.light-mode .swich-button-black {
   position: absolute;
