@@ -1,23 +1,18 @@
 .banner
-   padding: 120px 0 120px 0
+   padding: 120px 0
    background: url(../img/banner-bg.jpg)
-   &-wrapper 
+   &-wrapper
       width: 387px
-      z-index: 2
    &-logo
       margin-bottom: 150px
    &-title
-      font-weight: 500
-      font-size: 43px
-      line-height: 110%
+      @include large-text
       margin-bottom: 30px
    &-text
-      font-weight: normal
-      font-size: 14px
-      line-height: 150%
+      @include average-text
       width: 358px
 
    &-ellipse
-      position: absolute
+      @include img-setting
       top: -420px
       right: 0

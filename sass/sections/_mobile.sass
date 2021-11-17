@@ -1,32 +1,25 @@
 .mobile
    &-ellipse
       &-top
-         position: absolute
+         @include img-setting
          right: 0
          bottom: -150px
-         z-index: 3
       &-bottom
-         position: absolute
+         @include img-setting
          left: 0
          bottom: 0
-         z-index: 3
    &-wrapper
       display: flex
-      position: relative
-      z-index: 4
+      @include common-setting
       &-title
          width: 525px
          color: $orange-text
-         font-weight: 500
-         font-size: 43px
-         line-height: 110%
+         @include large-text
          margin-bottom: 30px
          margin-right: 70px
       &-text
          max-width: 358px
-         font-weight: normal
-         font-size: 14px
-         line-height: 150%
+         @include average-text
          margin-bottom: 50px
 
    &-descr
@@ -78,8 +71,7 @@
          flex-direction: column
          text-align: left
          &-top
-            font-weight: normal
-            font-size: 11px
+            @include small-text
          &-bottom
             font-weight: 600
-            font-size: 16px
+            font-size: 14px

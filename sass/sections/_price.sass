@@ -32,9 +32,7 @@
             position: relative
             z-index: 3
             &-title
-                font-weight: 500
-                font-size: 43px
-                line-height: 110%
+                @include large-text
                 margin-bottom: 10px
             &-cost
                 font-size: 26px
@@ -79,14 +77,14 @@
             width: 22%
             display: flex
             flex-direction: column
+            position: relative
+            z-index: 3
             &-title
                 font-weight: 600
                 font-size: 20px
                 line-height: 120%
                 margin-bottom: 29px
             &-item
-                font-weight: normal
-                font-size: 14px
-                line-height: 150%
+                @include average-text
                 margin-bottom: 15px
                 text-align: left

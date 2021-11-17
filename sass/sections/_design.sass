@@ -1,64 +1,56 @@
 .design
    padding: 100px 0 100px 0
-   &-wrapper
-      position: relative
-      z-index: 3
-   &-title
-      font-weight: 500
-      font-size: 43px
-      line-height: 110%
-      color: $orange-text
-      max-width: 70%
-      margin-bottom: 60px
    &-line
       &-top
-         position: absolute
+         @include img-setting
          top: 0
          right: 0
       &-bottom
-         position: absolute
+         @include img-setting
          top: 560px
          left: 0
    &-ellipse
       &-top
-         position: absolute
+         @include img-setting
          top: 0
          right: 0
-         z-index: 2
       &-bottom
-         position: absolute
+         @include img-setting
          top: 0
          left: 0
-         z-index: 2
-   
-.card
    &-wrapper
-      display: flex
-      justify-content: space-between
-   &-left
-      background: url(../img/design-card.jpg)
-      width: 530px
-      height: 530px
-      border-radius: 25px
-      padding: 50px
-      display: flex
-      flex-direction: column
-      justify-content: end
-   &-right
-      background: url(../img/design-card-right.jpg)
-      width: 530px
-      height: 530px
-      border-radius: 25px
-      padding: 50px
-      display: flex
-      flex-direction: column
-      justify-content: end
+      @include common-setting
    &-title
-      margin-bottom: 20px
-      font-weight: 600
-      font-size: 16px
-      line-height: 120%
-   &-text
-      font-weight: normal
-      font-size: 12px
-      line-height: 150%
+      @include large-text
+      color: $orange-text
+      max-width: 70%
+      margin-bottom: 60px
+   &-card
+      &-wrapper
+         display: flex
+         justify-content: space-between
+      &-left
+         background: url(../img/design-card.jpg)
+         width: 530px
+         height: 530px
+         border-radius: 25px
+         padding: 50px
+         display: flex
+         flex-direction: column
+         justify-content: end
+      &-right
+         background: url(../img/design-card-right.jpg)
+         width: 530px
+         height: 530px
+         border-radius: 25px
+         padding: 50px
+         display: flex
+         flex-direction: column
+         justify-content: end
+      &-title
+         margin-bottom: 20px
+         font-weight: 600
+         font-size: 16px
+         line-height: 120%
+      &-text
+         @include small-text

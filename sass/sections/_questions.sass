@@ -1,46 +1,36 @@
 .questions
-    padding: 115px 0 115px 0
+    padding: 115px 0
     &-ellipse
-        position: absolute
+        @include img-setting
         left: 0
         top: -350px
         opacity: 0.8
     &-wrapper
         display: flex
         justify-content: space-between
-        position: relative
-        z-index: 3
+        @include common-setting
         &-heading
             display: flex
             flex-direction: column
             width: 415px
             align-items: flex-start
             &-title
-                font-weight: 500
-                font-size: 43px
-                line-height: 110%
+                @include large-text
                 color: $orange-text
                 margin-bottom: 20px
             &-text
-                font-weight: normal
-                font-size: 12px
-                line-height: 150%
+                @include small-text
                 margin-bottom: 10px
                 width: 280px
             &-button
+                @include button
                 background-color: #F1F1F1
-                border-radius: 65px
-                border: none
-                font-weight: bold
-                font-size: 16px
-                line-height: 150%
                 padding: 15px 30px
                 margin-top: 45px
 
         &-right
+            @include common-setting
             width: 640px
-            position: relative
-            z-index: 3
             &-item
                 margin-bottom: 40px
                 &-title
@@ -54,6 +44,4 @@
                     background-color: $orange-text
                     margin-bottom: 10px
                 &-text
-                    font-weight: normal
-                    font-size: 12px
-                    line-height: 150%
+                    @include small-text

@@ -1,55 +1,48 @@
 .header
    padding: 38px 0 120px 0
    &-ellipse1
-      position: absolute
-      z-index: 2
+      @include img-setting
       opacity: 0.2
       left: 590px
       top: 0px
       width: 447px
    &-ellipse2
-      position: absolute
-      z-index: 2
+      @include img-setting
       opacity: 0.5
       right: 0px
       top: 0px
       width: 860px
    &-ellipse3
-      position: absolute
-      z-index: 2
+      @include img-setting
       opacity: 0.3
       right: 0px
       top: 0px
       width: 860px
    &-ellipse4
-      position: absolute
-      z-index: 2
+      @include img-setting
       opacity: 0.5
       left: 0px
       top: 600px
       width: 860px
    &-bike
       &-white
+         @include img-setting
          display: block
-         position: absolute
          top: 0
          right: 0
-         z-index: 2
          max-width: 1050px
       &-black
+         @include img-setting
          display: none
-         position: absolute
          top: 0
          right: 0
-         z-index: 2
          width: 1050px
    &-top
+      @include common-setting
       display: flex
       align-items: center
       justify-content: space-between
       margin-bottom: 90px
-      z-index: 5
-      position: relative
       &-logo
          &-white
             display: block
@@ -60,21 +53,16 @@
          list-style: none
          margin-left: -250px
          &-item
-            font-size: 12px
+            @include small-text
             margin-right: 40px
-         &-button
-            padding: 15px 35px
-            font-size: 14px
-            font-weight: bold
-            color: #151515
-            background-color: #F1F1F1
-            border-radius: 65px
-            border: none
-            cursor: pointer
+      &-button
+         @include button
+         padding: 15px 35px
+         color: #151515
+         background-color: #F1F1F1
 
    &-cover
-      z-index: 5
-      position: relative
+      @include common-setting
       &-heading
          font-weight: 600
          font-size: 68px
@@ -90,84 +78,65 @@
          position: relative
          margin-bottom: 248px
          &-black
-            font-weight: bold
-            font-size: 14px
-            line-height: 150%
+            @include button
             color: $text-color
             padding: 15px 35px 11px 145px
-            border-radius: 65px
             border: 3px solid $text-color
             background-color: transparent
          &-white
+            @include button
             position: absolute
             left: 0
             color: #151515
-            font-weight: bold
-            font-size: 14px
-            line-height: 150%
             padding: 15px 35px
             background-color: $text-color
-            border-radius: 65px
-            border: none
    &-benefits
-      z-index: 5
-      position: relative
+      @include common-setting
       &-heading
-         font-weight: 500
-         font-size: 43px
-         line-height: 110%
          margin-bottom: 60px
-.benefits
-   &-wrapper
-      display: flex
-   &-card
-      width: 365px
-      margin-bottom: 28px
-      &-title
+         @include large-text
+      &-wrapper
+         display: flex
+      &-card
          width: 365px
-         background-color: transparent
-         border: none
-         border-bottom: 2px solid #8f7a74
-         color: #8f7a74
-         text-align: left
-         font-weight: 500
-         font-size: 15px
-         line-height: 120%
-         margin-bottom: 20px
-         padding: 0 0 15px 30px
-      &-text
-         color: #8f7a74
-         font-weight: normal
-         font-size: 12px
-         line-height: 150%
-         padding: 0 0 0 30px
-   &-img
-      display: flex
-      justify-content: space-between
-      &-left
-         background: linear-gradient(0deg, rgba(232, 181, 119, 0.3), rgba(232, 181, 119, 0.3)), url(.png)
-         background-blend-mode: soft-light, normal
-         border-radius: 15px
-         max-width: 700px
-         z-index: 5
-      &-right
-         background: linear-gradient(0deg, rgba(232, 181, 119, 0.3), rgba(232, 181, 119, 0.3)), url(.png)
-         background-blend-mode: soft-light, normal
-         border-radius: 15px
-         max-width: 340px
-         max-height: 280px
-
-   &-line
-      position: absolute
-      bottom: -120px
-      left: -216px
-      z-index: 4
-
-.active
-   &-title
-      border-bottom: 2px solid $orange-text
-      color: $text-color
-      padding: 0 20px 15px 0
-   &-text
-      color: $text-color
-      padding: 0
+         margin-bottom: 28px
+         &-title
+            width: 365px
+            background-color: transparent
+            border: none
+            border-bottom: 2px solid #8f7a74
+            color: #8f7a74
+            text-align: left
+            @include average-text
+            margin-bottom: 20px
+            padding: 0 0 15px 30px
+            &-active
+               border-bottom: 2px solid $orange-text
+               color: $text-color
+               padding: 0 20px 15px 0
+         &-text
+            color: #8f7a74
+            @include small-text
+            padding-left: 30px
+            &-active
+               color: $text-color
+               padding: 0
+      &-img
+         display: flex
+         justify-content: space-between
+         &-left
+            background: linear-gradient(0deg, rgba(232, 181, 119, 0.3), rgba(232, 181, 119, 0.3)), url(.png)
+            background-blend-mode: soft-light, normal
+            border-radius: 15px
+            max-width: 700px
+            z-index: 5
+         &-right
+            background: linear-gradient(0deg, rgba(232, 181, 119, 0.3), rgba(232, 181, 119, 0.3)), url(.png)
+            background-blend-mode: soft-light, normal
+            border-radius: 15px
+            max-width: 340px
+            max-height: 280px
+      &-line
+         @include img-setting
+         bottom: -120px
+         left: -216px
