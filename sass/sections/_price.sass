@@ -40,13 +40,8 @@
                 font-weight: 500
                 margin-bottom: 35px
             &-buy
+                @include button
                 background-color: $orange-text
-                border-radius: 65px
-                padding: 15px 35px
-                font-weight: bold
-                font-size: 16px
-                line-height: 150%
-                border: none
                 color: $text-color
 
         &-right
@@ -64,11 +59,3 @@
                 @include average-text
                 margin-bottom: 15px
                 text-align: left
-
-// .swich-button
-//     position: relative
-//     margin-bottom: 195px
-//     &-black
-//         @include swich-button-black
-//     &-white
-//         @include swich-button-white

@@ -174,7 +174,6 @@ ul {
   font-size: 14px;
   line-height: 120%;
   margin-bottom: 20px;
-  margin-top: 248px;
   padding: 0 0 15px 30px;
 }
 .header-benefits-card-title-active {
@@ -227,6 +226,7 @@ ul {
   font-weight: 600;
   border-radius: 65px;
   border: none;
+  padding: 15px 35px;
   color: #F1F1F1;
   padding: 15px 35px 11px 145px;
   border: 3px solid #F1F1F1;
@@ -237,6 +237,7 @@ ul {
   font-weight: 600;
   border-radius: 65px;
   border: none;
+  padding: 15px 35px;
   position: absolute;
   left: 0;
   color: #151515;
@@ -691,8 +692,8 @@ ul {
   font-weight: 600;
   border-radius: 65px;
   border: none;
+  padding: 15px 35px;
   background-color: #F1F1F1;
-  padding: 15px 30px;
   margin-top: 45px;
 }
 .questions-wrapper-right {
@@ -768,13 +769,12 @@ ul {
   margin-bottom: 35px;
 }
 .price-wrapper-left-buy {
-  background-color: #FF4C0D;
+  font-size: 14px;
+  font-weight: 600;
   border-radius: 65px;
-  padding: 15px 35px;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 150%;
   border: none;
+  padding: 15px 35px;
+  background-color: #FF4C0D;
   color: #F1F1F1;
 }
 .price-wrapper-right {
@@ -948,4 +948,58 @@ body.light-mode .price-wrapper-right-item {
 }
 body.light-mode .footer-wrapper-text {
   color: #151515;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+
+  .header-top-menu {
+    margin-left: -190px;
+  }
+  .header-benefits-card {
+    width: 310px;
+  }
+  .header-benefits-card-title {
+    width: 310px;
+  }
+  .header-benefits-img-left {
+    width: 610px;
+  }
+  .header-benefits-img-right {
+    width: 300px;
+    height: 240px;
+  }
+
+  .design-card-left {
+    width: 450px;
+    height: 450px;
+  }
+  .design-card-right {
+    width: 450px;
+    height: 450px;
+  }
+
+  .safety-card {
+    width: 240px;
+  }
+  .safety-card-title {
+    width: 240px;
+  }
+  .safety-img-left {
+    width: 620px;
+  }
+  .safety-img-right {
+    width: 280px;
+    height: 220px;
+  }
+
+  .review-wrapper {
+    width: 100%;
+  }
+
+  .carousel-cell {
+    width: 350px;
+  }
 }/*# sourceMappingURL=style.css.map */
