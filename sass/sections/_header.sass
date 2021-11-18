@@ -40,18 +40,24 @@
    &-top
       @include common-setting
       display: flex
-      align-items: center
+
       justify-content: space-between
       margin-bottom: 90px
       &-logo
          &-white
             display: block
+            margin-right: 80px
          &-orange
             display: none
+            margin-right: 80px
       &-menu
-         display: flex
-         list-style: none
-         margin-left: -250px
+         &-left
+            display: flex
+            justify-content: space-between
+            align-items: center
+         &-list
+            display: flex
+            list-style: none
          &-item
             @include small-text
             margin-right: 40px
