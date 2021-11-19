@@ -53,7 +53,7 @@ ul {
   opacity: 0.2;
   left: 590px;
   top: 0px;
-  width: 447px;
+  width: 20%;
 }
 .header-ellipse2 {
   position: absolute;
@@ -61,7 +61,7 @@ ul {
   opacity: 0.5;
   right: 0px;
   top: 0px;
-  width: 860px;
+  width: 60%;
 }
 .header-ellipse3 {
   position: absolute;
@@ -69,7 +69,7 @@ ul {
   opacity: 0.3;
   right: 0px;
   top: 0px;
-  width: 860px;
+  width: 60%;
 }
 .header-ellipse4 {
   position: absolute;
@@ -77,7 +77,7 @@ ul {
   opacity: 0.5;
   left: 0px;
   top: 600px;
-  width: 860px;
+  width: 60%;
 }
 .header-bike-white {
   position: absolute;
@@ -85,7 +85,10 @@ ul {
   display: block;
   top: 0;
   right: 0;
-  max-width: 1050px;
+  width: 90%;
+}
+.header-bike-white-small {
+  display: none;
 }
 .header-bike-black {
   position: absolute;
@@ -93,7 +96,10 @@ ul {
   display: none;
   top: 0;
   right: 0;
-  width: 1050px;
+  width: 90%;
+}
+.header-bike-black-small {
+  display: none;
 }
 .header-top {
   position: relative;
@@ -124,6 +130,9 @@ ul {
   font-size: 12px;
   line-height: 150%;
   margin-right: 40px;
+}
+.header-top-menu-burger {
+  display: none;
 }
 .header-top-button {
   font-size: 14px;
@@ -157,19 +166,21 @@ ul {
 }
 .header-benefits-heading {
   margin-bottom: 60px;
+  margin-top: 248px;
   font-weight: 500;
   font-size: 43px;
   line-height: 110%;
 }
 .header-benefits-wrapper {
   display: flex;
+  width: 100%;
 }
 .header-benefits-card {
-  width: 365px;
+  width: 33%;
   margin-bottom: 28px;
 }
 .header-benefits-card-title {
-  width: 365px;
+  width: 100%;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #8f7a74;
@@ -205,15 +216,18 @@ ul {
   background: linear-gradient(0deg, rgba(232, 181, 119, 0.3), rgba(232, 181, 119, 0.3)), url(.png);
   background-blend-mode: soft-light, normal;
   border-radius: 15px;
-  max-width: 700px;
+  width: 65%;
   z-index: 5;
 }
 .header-benefits-img-right {
   background: linear-gradient(0deg, rgba(232, 181, 119, 0.3), rgba(232, 181, 119, 0.3)), url(.png);
   background-blend-mode: soft-light, normal;
   border-radius: 15px;
-  max-width: 340px;
+  width: 30%;
   max-height: 280px;
+}
+.header-benefits-img-small {
+  display: none;
 }
 .header-benefits-line {
   position: absolute;
@@ -224,7 +238,6 @@ ul {
 
 .swich-button {
   position: relative;
-  margin-bottom: 248px;
 }
 .swich-button-black {
   font-size: 14px;
@@ -277,6 +290,7 @@ ul {
   z-index: 2;
   top: -420px;
   right: 0;
+  width: 80%;
 }
 
 .design {
@@ -287,24 +301,28 @@ ul {
   z-index: 2;
   top: 0;
   right: 0;
+  width: 20%;
 }
 .design-line-bottom {
   position: absolute;
   z-index: 2;
   top: 560px;
   left: 0;
+  width: 25%;
 }
 .design-ellipse-top {
   position: absolute;
   z-index: 2;
   top: 0;
   right: 0;
+  width: 80%;
 }
 .design-ellipse-bottom {
   position: absolute;
   z-index: 2;
   top: 0;
   left: 0;
+  width: 70%;
 }
 .design-wrapper {
   position: relative;
@@ -315,7 +333,7 @@ ul {
   font-size: 43px;
   line-height: 110%;
   color: #FF4C0D;
-  max-width: 70%;
+  width: 70%;
   margin-bottom: 60px;
 }
 .design-card-wrapper {
@@ -324,7 +342,7 @@ ul {
 }
 .design-card-left {
   background: url(../img/design-card.jpg);
-  width: 530px;
+  width: 47%;
   height: 530px;
   border-radius: 25px;
   padding: 50px;
@@ -334,7 +352,7 @@ ul {
 }
 .design-card-right {
   background: url(../img/design-card-right.jpg);
-  width: 530px;
+  width: 47%;
   height: 530px;
   border-radius: 25px;
   padding: 50px;
@@ -353,6 +371,9 @@ ul {
   font-size: 12px;
   line-height: 150%;
 }
+.design-card-img {
+  display: none;
+}
 
 .safety {
   padding-bottom: 100px;
@@ -360,12 +381,14 @@ ul {
 .safety-ellipse-top {
   position: absolute;
   z-index: 2;
+  width: 80%;
 }
 .safety-line {
   position: absolute;
   bottom: -190px;
   right: 0;
   z-index: 4;
+  width: 40%;
 }
 .safety-heading {
   color: #FF4C0D;
@@ -378,13 +401,14 @@ ul {
   position: relative;
   z-index: 3;
   display: flex;
+  width: 100%;
 }
 .safety-card {
-  width: 270px;
+  width: 25%;
   margin-bottom: 28px;
 }
 .safety-card-title {
-  width: 270px;
+  width: 100%;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #8f7a74;
@@ -410,23 +434,25 @@ ul {
 }
 .safety-card-text-active {
   color: #F1F1F1;
-  padding: 0;
+  padding-left: 0;
+}
+.safety-card-img {
+  display: none;
 }
 .safety-img {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 60px;
   position: relative;
 }
 .safety-img-left {
   border-radius: 30px;
-  max-width: 690px;
+  width: 65%;
   z-index: 5;
   position: relative;
 }
 .safety-img-right {
   border-radius: 30px;
-  max-width: 350px;
+  width: 30%;
   height: 290px;
   z-index: 3;
 }
@@ -436,12 +462,14 @@ ul {
   z-index: 2;
   right: 0;
   bottom: -150px;
+  width: 80%;
 }
 .mobile-ellipse-bottom {
   position: absolute;
   z-index: 2;
   left: 0;
   bottom: 0;
+  width: 80%;
 }
 .mobile-wrapper {
   display: flex;
@@ -449,33 +477,34 @@ ul {
   z-index: 3;
 }
 .mobile-wrapper-title {
-  width: 525px;
   color: #FF4C0D;
   font-weight: 500;
   font-size: 43px;
   line-height: 110%;
   margin-bottom: 30px;
-  margin-right: 70px;
+  width: 80%;
 }
 .mobile-wrapper-text {
-  max-width: 358px;
   font-weight: 500;
   font-size: 14px;
   line-height: 120%;
   margin-bottom: 50px;
+  width: 60%;
 }
 .mobile-descr {
   margin-top: 120px;
+  width: 60%;
+}
+.mobile-img {
+  width: 40%;
 }
 .mobile-img-white {
-  width: 400px;
-  height: 575px;
   display: block;
+  width: 90%;
 }
 .mobile-img-black {
-  width: 400px;
-  height: 575px;
   display: none;
+  width: 90%;
 }
 .mobile-button {
   display: flex;
@@ -530,12 +559,12 @@ ul {
 
 .brand {
   background: url(../img/brand.jpg);
-  padding: 120px 0 120px 0;
+  padding: 120px 0;
   position: relative;
   background-size: cover;
 }
 .brand-wrapper {
-  width: 460px;
+  width: 50%;
 }
 .brand-logo {
   width: 60px;
@@ -573,12 +602,14 @@ ul {
   z-index: 2;
   top: 0;
   right: 0;
+  width: 80%;
 }
 .review-line {
   position: absolute;
   z-index: 2;
   top: 0;
   right: 0;
+  width: 25%;
 }
 .review-title {
   font-weight: 500;
@@ -588,6 +619,7 @@ ul {
   margin-bottom: 50px;
 }
 .review-wrapper {
+  padding: 0 15px;
   position: relative;
   z-index: 3;
 }
@@ -649,11 +681,12 @@ ul {
 }
 
 .carousel-cell {
-  width: 415px;
-  margin-left: 30px;
+  width: 30%;
+  margin-left: 40px;
   background-color: #151515;
   border-radius: 15px;
-  padding: 38px;
+  padding: 30px;
+  height: inherit;
 }
 
 .questions {
@@ -665,17 +698,19 @@ ul {
   left: 0;
   top: -350px;
   opacity: 0.8;
+  width: 50%;
 }
 .questions-wrapper {
   display: flex;
   justify-content: space-between;
   position: relative;
   z-index: 3;
+  width: 100%;
 }
 .questions-wrapper-heading {
   display: flex;
   flex-direction: column;
-  width: 415px;
+  width: 40%;
   align-items: flex-start;
 }
 .questions-wrapper-heading-title {
@@ -690,7 +725,7 @@ ul {
   font-size: 12px;
   line-height: 150%;
   margin-bottom: 10px;
-  width: 280px;
+  width: 70%;
 }
 .questions-wrapper-heading-button {
   font-size: 14px;
@@ -704,7 +739,7 @@ ul {
 .questions-wrapper-right {
   position: relative;
   z-index: 3;
-  width: 640px;
+  width: 60%;
 }
 .questions-wrapper-right-item {
   margin-bottom: 40px;
@@ -744,16 +779,22 @@ ul {
 }
 .price-wrapper-img-white {
   position: absolute;
-  right: -130px;
-  top: -100px;
-  width: 950px;
+  right: 0;
+  top: -70px;
+  width: 55%;
   display: block;
+}
+.price-wrapper-img-white-small {
+  display: none;
 }
 .price-wrapper-img-black {
   position: absolute;
-  right: -130px;
-  top: -100px;
-  width: 950px;
+  right: 0;
+  top: -70px;
+  width: 55%;
+  display: none;
+}
+.price-wrapper-img-black-small {
   display: none;
 }
 .price-wrapper-left {
@@ -781,6 +822,7 @@ ul {
   padding: 15px 35px;
   background-color: #FF4C0D;
   color: #F1F1F1;
+  margin-top: 250px;
 }
 .price-wrapper-right {
   width: 22%;
@@ -903,13 +945,9 @@ body.light-mode .mobile-button-img-white {
   display: block;
 }
 body.light-mode .mobile-img-white {
-  width: 400px;
-  height: 575px;
   display: none;
 }
 body.light-mode .mobile-img-black {
-  width: 400px;
-  height: 575px;
   display: block;
 }
 body.light-mode .review-wrapper-card {
@@ -955,54 +993,87 @@ body.light-mode .footer-wrapper-text {
   color: #151515;
 }
 
+@media (max-width: 768px) {
+  body.light-mode .header-bike-white-small {
+    display: none;
+  }
+  body.light-mode .header-bike-black {
+    display: none;
+  }
+  body.light-mode .header-bike-black-small {
+    display: block;
+    position: absolute;
+    width: 70%;
+    right: 0;
+    top: 0;
+  }
+  body.light-mode .price-wrapper-img-white {
+    display: none;
+  }
+  body.light-mode .price-wrapper-img-white-small {
+    display: none;
+  }
+  body.light-mode .price-wrapper-img-black {
+    display: none;
+  }
+  body.light-mode .price-wrapper-img-black-small {
+    z-index: 4;
+    position: absolute;
+    right: 0;
+    top: -60px;
+    display: block;
+    width: 67%;
+  }
+}
+@media (max-width: 576px) {
+  .price-wrapper-img-white {
+    display: none;
+  }
+  .price-wrapper-img-white-small {
+    display: none;
+  }
+  .price-wrapper-img-black {
+    display: block;
+  }
+  .price-wrapper-img-black-small {
+    display: none;
+  }
+}
 @media (max-width: 1200px) {
   .container {
-    width: 960px;
+    max-width: 992px;
   }
 
-  .header-benefits-card {
-    width: 310px;
-  }
-  .header-benefits-card-title {
-    width: 310px;
-  }
-  .header-benefits-img-left {
-    width: 610px;
+  .header-benefits-heading {
+    margin-top: 180px;
   }
   .header-benefits-img-right {
-    width: 300px;
     height: 240px;
+  }
+  .header-cover-heading {
+    font-size: 60px;
   }
 
   .design-card-left {
-    width: 450px;
     height: 450px;
   }
   .design-card-right {
-    width: 450px;
     height: 450px;
   }
 
-  .safety-card {
-    width: 240px;
-  }
-  .safety-card-title {
-    width: 240px;
-  }
-  .safety-img-left {
-    width: 620px;
-  }
   .safety-img-right {
-    width: 280px;
     height: 220px;
   }
 
-  .review-wrapper {
-    width: 100%;
+  .price-wrapper-left {
+    width: 50%;
+  }
+  .price-wrapper-left-buy {
+    margin-top: 150px;
   }
 
-  .carousel-cell {
-    width: 350px;
+  .banner-ellipse {
+    display: none;
   }
 }
 @media (max-width: 992px) {
@@ -1010,85 +1081,65 @@ body.light-mode .footer-wrapper-text {
     max-width: 768px;
   }
 
-  .swich-button {
-    margin-bottom: 120px;
+  .header {
+    padding: 38px 0 70px 0;
   }
-
-  .header-ellipse1 {
-    width: 385px;
+  .header-top {
+    margin-bottom: 50px;
   }
   .header-top-menu-item {
     margin-right: 30px;
   }
   .header-cover-heading {
-    font-size: 54px;
+    font-size: 50px;
   }
   .header-cover-text {
     font-size: 18px;
   }
-  .header-bike-white {
-    max-width: 900px;
-  }
-  .header-bike-black {
-    max-width: 900px;
-  }
   .header-benefits-heading {
     font-size: 36px;
-  }
-  .header-benefits-card {
-    width: 250px;
+    margin-top: 120px;
   }
   .header-benefits-card-title {
-    width: 250px;
-    padding: 0 0 15px 29px;
+    padding: 0 0 15px 20px;
   }
   .header-benefits-card-title-active {
-    padding-bottom: 0 0 15px 0;
+    padding: 0 0 15px 0;
   }
-  .header-benefits-img-left {
-    width: 480px;
+  .header-benefits-card-text {
+    padding-left: 20px;
+  }
+  .header-benefits-card-text-active {
+    padding-left: 0;
   }
   .header-benefits-img-right {
-    width: 240px;
     height: 180px;
   }
 
+  .design {
+    padding: 70px 0;
+  }
   .design-title {
     font-size: 36px;
   }
   .design-card-left {
-    width: 350px;
     height: 350px;
   }
   .design-card-right {
-    width: 350px;
     height: 350px;
   }
   .design-line-bottom {
-    width: 180px;
+    top: 440px;
   }
 
   .safety {
-    padding-bottom: 50px;
-  }
-  .safety-line {
-    display: none;
+    padding-bottom: 70px;
   }
   .safety-heading {
     font-size: 36px;
   }
-  .safety-card {
-    width: 190px;
-  }
-  .safety-card-title {
-    width: 190px;
-  }
-  .safety-img-left {
-    width: 530px;
-  }
   .safety-img-right {
-    width: 190px;
-    height: 130px;
+    height: 170px;
   }
 
   .mobile-descr {
@@ -1096,14 +1147,16 @@ body.light-mode .footer-wrapper-text {
   }
   .mobile-wrapper-title {
     font-size: 36px;
-    width: 440px;
   }
   .mobile-img-white {
-    width: 230px;
-    height: 320px;
+    width: 90%;
   }
+  .mobile-img-black {
+    width: 90%;
+  }
+
   .brand {
-    padding: 80px 0;
+    padding: 70px 0;
   }
   .brand-title {
     font-size: 36px;
@@ -1118,17 +1171,18 @@ body.light-mode .footer-wrapper-text {
   .review-wrapper-card-title {
     font-size: 16px;
   }
-
-  .carousel-cell {
-    width: 290px;
-    padding: 30px;
+  .review-wrapper-card-text {
+    font-size: 10px;
   }
 
+  .questions {
+    padding: 70px 0;
+  }
   .questions-wrapper-heading-title {
     font-size: 36px;
   }
-  .questions-wrapper-heading-text {
-    width: 230px;
+  .questions-ellipse {
+    top: -250px;
   }
 
   .price-wrapper-left {
@@ -1137,15 +1191,429 @@ body.light-mode .footer-wrapper-text {
   .price-wrapper-left-title {
     font-size: 36px;
   }
+  .price-wrapper-left-buy {
+    margin-top: 120px;
+  }
   .price-wrapper-right {
     width: 40%;
   }
   .price-wrapper-img-white {
-    top: -50px;
-    width: 770px;
+    top: 10px;
+    right: 48px;
   }
   .price-wrapper-img-black {
-    top: -50px;
-    width: 770px;
+    top: 10px;
+    right: 48px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
+  }
+
+  .header {
+    padding: 38px 0 30px 0;
+  }
+  .header-ellipse1 {
+    display: none;
+  }
+  .header-bike-white {
+    display: none;
+  }
+  .header-bike-white-small {
+    display: block;
+    position: absolute;
+    width: 63%;
+    right: 0;
+    top: 0;
+  }
+  .header-bike-black {
+    display: none;
+  }
+  .header-bike-black-small {
+    display: none;
+  }
+  .header-top-menu-burger {
+    display: none;
+    border: none;
+    border-radius: 50%;
+    background-color: #F1F1F1;
+    width: 54px;
+    height: 54px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+  }
+  .header-top-menu-burger-line {
+    height: 2px;
+    width: 20px;
+    background-color: #0D1C2E;
+  }
+  .header-top-menu-list {
+    display: none;
+  }
+  .header-top-button {
+    display: none;
+  }
+  .header-cover-heading {
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
+  .header-cover-text {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+  .header-benefits {
+    margin-bottom: 30px;
+  }
+  .header-benefits-heading {
+    font-size: 25px;
+    margin-top: 170px;
+  }
+  .header-benefits-wrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+  .header-benefits-card {
+    width: 100%;
+  }
+  .header-benefits-card-title {
+    width: 100%;
+    font-size: 20px;
+    color: #FF4C0D;
+    border-bottom: 2px solid #FF4C0D;
+    padding: 0 0 15px 0;
+  }
+  .header-benefits-card-text {
+    font-size: 14px;
+    color: #F1F1F1;
+    padding: 0;
+  }
+  .header-benefits-img {
+    display: none;
+  }
+  .header-benefits-img-small {
+    display: block;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .swich-button-black {
+    padding: 15px 15px 11px 110px;
+  }
+  .swich-button-white {
+    padding: 15px 25px;
+  }
+
+  .banner {
+    padding: 40px 0 40px 0;
+    background: url(../img/banner-bg-small.jpg);
+    background-size: cover;
+  }
+  .banner-title {
+    font-size: 25px;
+  }
+
+  .design-title {
+    font-size: 25px;
+  }
+  .design-line-top {
+    display: none;
+  }
+  .design-line-bottom {
+    display: none;
+  }
+  .design-card-wrapper {
+    flex-direction: column;
+  }
+  .design-card-left {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .design-card-right {
+    width: 100%;
+  }
+
+  .safety-line {
+    display: none;
+  }
+  .safety-heading {
+    font-size: 25px;
+  }
+  .safety-wrapper {
+    flex-direction: column;
+  }
+  .safety-card {
+    width: 100%;
+  }
+  .safety-card-title {
+    width: 100%;
+    font-size: 20px;
+    color: #FF4C0D;
+    border-bottom: 2px solid #FF4C0D;
+    padding: 0 0 15px 0;
+  }
+  .safety-card-text {
+    font-size: 14px;
+    color: #F1F1F1;
+    padding: 0;
+  }
+  .safety-card-img {
+    display: block;
+    border-radius: 25px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .safety-img-right {
+    display: none;
+  }
+  .safety-img-left {
+    display: none;
+  }
+
+  .mobile-wrapper-title {
+    font-size: 25px;
+    margin-right: 15px;
+    width: 304px;
+  }
+  .mobile-wrapper-text {
+    width: 100%;
+  }
+  .mobile-button-text-top {
+    font-size: 10px;
+  }
+  .mobile-button-text-bottom {
+    font-size: 10px;
+  }
+
+  .brand-title {
+    font-size: 25px;
+  }
+
+  .review-title {
+    font-size: 25px;
+  }
+
+  .carousel-cell {
+    width: 400px;
+  }
+
+  .questions-wrapper {
+    flex-direction: column;
+  }
+  .questions-wrapper-heading-title {
+    font-size: 25px;
+  }
+  .questions-wrapper-heading-text {
+    width: 460px;
+  }
+  .questions-wrapper-heading-button {
+    margin-bottom: 77px;
+  }
+  .questions-wrapper-right {
+    width: 487px;
+  }
+  .questions-wrapper-right-item-title {
+    font-size: 20px;
+  }
+  .questions-wrapper-right-item-text {
+    font-size: 14px;
+  }
+
+  .price-wrapper {
+    padding: 38px;
+  }
+  .price-wrapper-left-title {
+    font-size: 25px;
+  }
+  .price-wrapper-left-cost {
+    font-size: 23px;
+  }
+  .price-wrapper-left-buy {
+    margin-top: 80px;
+  }
+  .price-wrapper-right {
+    display: none;
+  }
+  .price-wrapper-img-white {
+    display: none;
+  }
+  .price-wrapper-img-white-small {
+    z-index: 4;
+    position: absolute;
+    right: 0;
+    top: -60px;
+    display: block;
+    width: 67%;
+  }
+  .price-wrapper-img-black {
+    display: none;
+  }
+  .price-wrapper-img-black-small {
+    display: none;
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-wrapper-right {
+    text-align: center;
+  }
+  .footer-wrapper-left {
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .header-bike-white-small {
+    width: 400px;
+    position: absolute;
+    z-index: 2;
+  }
+  .header-bike-black-small {
+    width: 400px;
+    position: absolute;
+    z-index: 2;
+  }
+  .header-cover {
+    margin-top: 450px;
+  }
+  .header-cover-text {
+    font-size: 16px;
+  }
+  .header-benefits-heading {
+    margin-top: 0;
+  }
+
+  .swich-button {
+    margin-bottom: 70px;
+  }
+  .swich-button-black {
+    width: 100%;
+    text-align: right;
+  }
+  .swich-button-white {
+    width: 50%;
+  }
+
+  .banner-wrapper {
+    width: 100%;
+  }
+  .banner-text {
+    width: 100%;
+  }
+
+  .design {
+    padding: 70px 0 70px 0;
+  }
+  .design-card-left {
+    background: none;
+    padding: 0;
+    width: 90%;
+    justify-content: start;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .design-card-right {
+    background: none;
+    padding: 0;
+    width: 90%;
+    justify-content: start;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .design-card-img {
+    display: block;
+    border-radius: 30px;
+  }
+
+  .safety-img {
+    margin-bottom: 0;
+  }
+
+  .review {
+    padding-top: 70px;
+  }
+  .review-ellipse {
+    display: none;
+  }
+
+  .carousel-cell {
+    width: 90%;
+  }
+
+  .mobile-wrapper {
+    flex-direction: column;
+  }
+  .mobile-img-white {
+    margin-top: 20px;
+  }
+  .mobile-img-black {
+    margin-top: 20px;
+  }
+
+  .brand {
+    background: url(../img/brand-bg-small.jpg);
+    background-size: cover;
+  }
+  .brand-wrapper {
+    width: 280px;
+  }
+  .brand-logo {
+    margin-bottom: 190px;
+  }
+
+  .questions {
+    padding-top: 70px;
+  }
+  .questions-heading {
+    width: 280px;
+  }
+  .questions-wrapper-heading {
+    width: 100%;
+    align-items: center;
+  }
+  .questions-wrapper-heading-text {
+    width: 100%;
+  }
+  .questions-wrapper-heading-button {
+    width: 100%;
+  }
+  .questions-wrapper-right {
+    width: 100%;
+  }
+
+  .price-wrapper {
+    flex-direction: column;
+  }
+  .price-wrapper-left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .price-wrapper-img-white {
+    display: block;
+    position: relative;
+    width: 100%;
+    right: 0;
+    top: 0;
+  }
+  .price-wrapper-img-white-small {
+    display: none;
+  }
+  .price-wrapper-img-black {
+    display: none;
+    position: relative;
+    width: 100%;
+    right: 0;
+    top: 0;
+  }
+  .price-wrapper-img-black-small {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

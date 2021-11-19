@@ -5,42 +5,48 @@
       opacity: 0.2
       left: 590px
       top: 0px
-      width: 447px
+      width: 20%
+
    &-ellipse2
       @include img-setting
       opacity: 0.5
       right: 0px
       top: 0px
-      width: 860px
+      width: 60%
+
    &-ellipse3
       @include img-setting
       opacity: 0.3
       right: 0px
       top: 0px
-      width: 860px
+      width: 60%
+
    &-ellipse4
       @include img-setting
       opacity: 0.5
       left: 0px
       top: 600px
-      width: 860px
+      width: 60%
    &-bike
       &-white
          @include img-setting
          display: block
          top: 0
          right: 0
-         max-width: 1050px
+         width: 90%
+         &-small
+            display: none
       &-black
          @include img-setting
          display: none
          top: 0
          right: 0
-         width: 1050px
+         width: 90%
+         &-small
+            display: none
    &-top
       @include common-setting
       display: flex
-
       justify-content: space-between
       margin-bottom: 90px
       &-logo
@@ -61,6 +67,8 @@
          &-item
             @include small-text
             margin-right: 40px
+         &-burger
+            display: none
       &-button
          @include button
          color: #151515
@@ -84,14 +92,16 @@
       @include common-setting
       &-heading
          margin-bottom: 60px
+         margin-top: 248px
          @include large-text
       &-wrapper
          display: flex
+         width: 100%
       &-card
-         width: 365px
+         width: 33%
          margin-bottom: 28px
          &-title
-            width: 365px
+            width: 100%
             background-color: transparent
             border: none
             border-bottom: 2px solid #8f7a74
@@ -118,14 +128,16 @@
             background: linear-gradient(0deg, rgba(232, 181, 119, 0.3), rgba(232, 181, 119, 0.3)), url(.png)
             background-blend-mode: soft-light, normal
             border-radius: 15px
-            max-width: 700px
+            width: 65%
             z-index: 5
          &-right
             background: linear-gradient(0deg, rgba(232, 181, 119, 0.3), rgba(232, 181, 119, 0.3)), url(.png)
             background-blend-mode: soft-light, normal
             border-radius: 15px
-            max-width: 340px
+            width: 30%
             max-height: 280px
+         &-small
+            display: none
       &-line
          @include img-setting
          bottom: -120px
@@ -133,7 +145,6 @@
 
 .swich-button
    position: relative
-   margin-bottom: 248px
    &-black
       @include swich-button-black
    &-white

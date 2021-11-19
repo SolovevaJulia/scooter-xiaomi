@@ -3,11 +3,13 @@
    &-ellipse
       &-top
          @include img-setting
+         width: 80%
    &-line
       position: absolute
       bottom: -190px
       right: 0
       z-index: 4
+      width: 40%
    &-heading
       color: $orange-text
       @include large-text
@@ -15,11 +17,12 @@
    &-wrapper
       @include common-setting
       display: flex
+      width: 100%
    &-card
-      width: 270px
+      width: 25%
       margin-bottom: 28px
       &-title
-         width: 270px
+         width: 100%
          background-color: transparent
          border: none
          border-bottom: 2px solid #8f7a74
@@ -38,19 +41,20 @@
          padding: 0 20px
          &-active
             color: $text-color
-            padding: 0
+            padding-left: 0
+      &-img
+         display: none
    &-img
       display: flex
       justify-content: space-between
-      margin-bottom: 60px
       position: relative
       &-left
          border-radius: 30px
-         max-width: 690px
+         width: 65%
          z-index: 5
          position: relative
       &-right
          border-radius: 30px
-         max-width: 350px
+         width: 30%
          height: 290px
          z-index: 3

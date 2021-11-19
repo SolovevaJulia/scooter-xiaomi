@@ -12,21 +12,23 @@
         border-radius: 15px
         position: relative
         z-index: 3
-
         &-img
             &-white
                 position: absolute
-                right: -130px
-                top: -100px
-                width: 950px
+                right: 0
+                top: -70px
+                width: 55%
                 display: block
+                &-small
+                    display: none
             &-black
                 position: absolute
-                right: -130px
-                top: -100px
-                width: 950px
+                right: 0
+                top: -70px
+                width: 55%
                 display: none
-
+                &-small
+                    display: none
         &-left
             width: 78%
             position: relative
@@ -43,13 +45,12 @@
                 @include button
                 background-color: $orange-text
                 color: $text-color
-
+                margin-top: 250px
         &-right
             width: 22%
             display: flex
             flex-direction: column
-            position: relative
-            z-index: 3
+            @include common-setting
             &-title
                 font-weight: 600
                 font-size: 20px

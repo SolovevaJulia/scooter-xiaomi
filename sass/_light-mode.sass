@@ -66,12 +66,8 @@ body.light-mode
                     display: block
         &-img
             &-white
-                width: 400px
-                height: 575px
                 display: none
             &-black
-                width: 400px
-                height: 575px
                 display: block
     .review
         &-wrapper
@@ -114,3 +110,47 @@ body.light-mode
         &-wrapper
             &-text
                 color: $dark-color
+
+@media (max-width: 768px)
+    body.light-mode
+        .header
+            &-bike
+                &-white
+                    &-small
+                        display: none
+                &-black
+                    display: none
+                    &-small
+                        display: block
+                        position: absolute
+                        width: 70%
+                        right: 0
+                        top: 0
+        .price
+            &-wrapper
+                &-img
+                    &-white
+                        display: none
+                        &-small
+                            display: none
+                    &-black
+                        display: none
+                        &-small
+                            z-index: 4
+                            position: absolute
+                            right: 0
+                            top: -60px
+                            display: block
+                            width: 67%
+@media  (max-width: 576px)
+    .price
+        &-wrapper
+            &-img
+                &-white
+                    display: none
+                    &-small
+                        display: none
+                &-black
+                    display: block
+                    &-small
+                        display: none

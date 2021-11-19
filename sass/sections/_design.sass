@@ -5,25 +5,29 @@
          @include img-setting
          top: 0
          right: 0
+         width: 20%
       &-bottom
          @include img-setting
          top: 560px
          left: 0
+         width: 25%
    &-ellipse
       &-top
          @include img-setting
          top: 0
          right: 0
+         width: 80%
       &-bottom
          @include img-setting
          top: 0
          left: 0
+         width: 70%
    &-wrapper
       @include common-setting
    &-title
       @include large-text
       color: $orange-text
-      max-width: 70%
+      width: 70%
       margin-bottom: 60px
    &-card
       &-wrapper
@@ -31,7 +35,7 @@
          justify-content: space-between
       &-left
          background: url(../img/design-card.jpg)
-         width: 530px
+         width: 47%
          height: 530px
          border-radius: 25px
          padding: 50px
@@ -40,7 +44,7 @@
          justify-content: end
       &-right
          background: url(../img/design-card-right.jpg)
-         width: 530px
+         width: 47%
          height: 530px
          border-radius: 25px
          padding: 50px
@@ -54,3 +58,5 @@
          line-height: 120%
       &-text
          @include small-text
+      &-img
+         display: none
