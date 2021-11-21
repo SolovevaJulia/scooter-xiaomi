@@ -1499,7 +1499,8 @@ body.light-mode .footer-wrapper-text {
 }
 @media (max-width: 576px) {
   .container {
-    max-width: 320px;
+    max-width: 360px;
+    width: 95%;
   }
 
   .header-bike-white-small {
@@ -1584,6 +1585,8 @@ body.light-mode .footer-wrapper-text {
   }
   .review-buttons {
     text-align: center;
+    display: flex;
+    justify-content: space-evenly;
   }
   .review-ellipse {
     display: none;
