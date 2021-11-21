@@ -38,6 +38,7 @@ section {
 
 button {
   cursor: pointer;
+  text-decoration: none;
 }
 
 ul {
@@ -1042,7 +1043,7 @@ body.light-mode .footer-wrapper-text {
   }
   body.light-mode .header-bike-black-small {
     display: block;
-    width: 123%;
+    width: 97%;
     position: absolute;
     z-index: 2;
   }
@@ -1209,9 +1210,6 @@ body.light-mode .footer-wrapper-text {
   }
   .review-wrapper-card-title {
     font-size: 16px;
-  }
-  .review-wrapper-card-text {
-    font-size: 10px;
   }
 
   .questions {
@@ -1517,7 +1515,7 @@ body.light-mode .footer-wrapper-text {
   }
 
   .header-bike-white-small {
-    width: 110%;
+    width: 86%;
     position: absolute;
     z-index: 2;
   }
