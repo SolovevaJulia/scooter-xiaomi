@@ -32,11 +32,15 @@ body.light-mode
                 &-text
                     &-active
                         color: $dark-color
-    .swich-button
-        &-white
-            @include swich-button-white-light-mode
-        &-black
-            @include swich-button-black-light-mode
+    .switch
+        &-button
+            border: 2px solid $dark-color
+            &::before
+                content: ''
+                background-color: $dark-color
+                color: $dark-color
+                transform: translate(100%, 0)
+                left: 2px
     .design
         &-title
             color: $dark-color

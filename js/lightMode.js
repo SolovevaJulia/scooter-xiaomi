@@ -1,5 +1,5 @@
 
-const btn = document.querySelectorAll('.swich-button-white');
+const btn = document.querySelectorAll('.switch-button-white');
 
 btn.forEach(item => {
     item.addEventListener('click', function() {
@@ -8,7 +8,7 @@ btn.forEach(item => {
 });
 
 
-const btnBlack = document.querySelectorAll('.swich-button-black');
+const btnBlack = document.querySelectorAll('.switch-button-black');
 
 btnBlack.forEach(item => {
     item.addEventListener('click', function() {

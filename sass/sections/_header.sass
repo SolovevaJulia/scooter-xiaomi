@@ -143,9 +143,38 @@
          bottom: -120px
          left: -216px
 
-.swich-button
-   position: relative
-   &-black
-      @include swich-button-black
-   &-white
-      @include swich-button-white
+.switch
+   &-button
+      position: relative
+      width: 240px
+      border-radius: 65px
+      background-color: transparent
+      display: flex
+      border: 2px solid $text-color
+      height: 48px
+      &::before
+         content: ''
+         width: 50%
+         position: absolute
+         z-index: 1
+         font-size: 14px
+         font-weight: 600
+         border-radius: 65px
+         border: none
+         background-color: $text-color
+         color: $dark-color
+         bottom: -2px
+         left: -2px
+         top: -2px
+      &-black
+         @include button
+         background-color: transparent
+         position: relative
+         color: $text-color
+         z-index: 2
+      &-white
+         @include button
+         background-color: transparent
+         position: relative
+         color: $dark-color
+         z-index: 2

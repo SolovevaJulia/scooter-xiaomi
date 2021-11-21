@@ -236,31 +236,51 @@ ul {
   left: -216px;
 }
 
-.swich-button {
+.switch-button {
   position: relative;
-}
-.swich-button-black {
-  font-size: 14px;
-  font-weight: 600;
+  width: 240px;
   border-radius: 65px;
-  border: none;
-  padding: 15px 35px;
-  color: #F1F1F1;
-  padding: 15px 35px 11px 145px;
-  border: 3px solid #F1F1F1;
   background-color: transparent;
+  display: flex;
+  border: 2px solid #F1F1F1;
+  height: 48px;
 }
-.swich-button-white {
+.switch-button::before {
+  content: "";
+  width: 50%;
+  position: absolute;
+  z-index: 1;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 65px;
+  border: none;
+  background-color: #F1F1F1;
+  color: #151515;
+  bottom: -2px;
+  left: -2px;
+  top: -2px;
+}
+.switch-button-black {
   font-size: 14px;
   font-weight: 600;
   border-radius: 65px;
   border: none;
   padding: 15px 35px;
-  position: absolute;
-  left: 0;
-  color: #151515;
+  background-color: transparent;
+  position: relative;
+  color: #F1F1F1;
+  z-index: 2;
+}
+.switch-button-white {
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 65px;
+  border: none;
   padding: 15px 35px;
-  background-color: #F1F1F1;
+  background-color: transparent;
+  position: relative;
+  color: #151515;
+  z-index: 2;
 }
 
 .banner {
@@ -884,22 +904,15 @@ body.light-mode .header-benefits-card-title-active {
 body.light-mode .header-benefits-card-text-active {
   color: #151515;
 }
-body.light-mode .swich-button-white {
-  color: #151515;
-  padding: 15px 145px 11px 35px;
-  border-radius: 65px;
-  border: 3px solid #151515;
-  background-color: transparent;
-  position: relative;
+body.light-mode .switch-button {
+  border: 2px solid #151515;
 }
-body.light-mode .swich-button-black {
-  position: absolute;
-  color: #F1F1F1;
-  padding: 15px 35px 11px 35px;
-  border: 3px solid #151515;
+body.light-mode .switch-button::before {
+  content: "";
   background-color: #151515;
-  left: 102px;
-  z-index: 3;
+  color: #151515;
+  transform: translate(100%, 0);
+  left: 2px;
 }
 body.light-mode .design-title {
   color: #151515;
@@ -1614,7 +1627,7 @@ body.light-mode .footer-wrapper-text {
   }
   .mobile-button {
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   .mobile-button-apple {
     margin-right: 0;
@@ -1681,4 +1694,19 @@ body.light-mode .footer-wrapper-text {
   .price-wrapper-img-black-small {
     display: none;
   }
+}
+.white {
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 65px;
+  border: none;
+  padding: 15px 35px;
+}
+
+.black {
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 65px;
+  border: none;
+  padding: 15px 35px;
 }/*# sourceMappingURL=style.css.map */
