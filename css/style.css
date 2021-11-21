@@ -572,10 +572,12 @@ ul {
   font-weight: 500;
   font-size: 12px;
   line-height: 150%;
+  color: #151515;
 }
 .mobile-button-text-bottom {
   font-weight: 600;
   font-size: 14px;
+  color: #151515;
 }
 
 .brand {
@@ -739,6 +741,7 @@ ul {
   padding: 15px 35px;
   background-color: #F1F1F1;
   margin-top: 45px;
+  color: #151515;
 }
 .questions-wrapper-right {
   position: relative;
