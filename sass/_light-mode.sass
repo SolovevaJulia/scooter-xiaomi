@@ -126,6 +126,18 @@ body.light-mode
                         width: 70%
                         right: 0
                         top: 0
+            &-benefits
+                &-heading
+                    color: $dark-color
+                &-card
+                    &-title
+                        color: $orange-text
+                    &-text
+                        color: $dark-color
+        .safety
+            &-card
+                &-text
+                    color: $dark-color
         .price
             &-wrapper
                 &-img
@@ -143,14 +155,44 @@ body.light-mode
                             display: block
                             width: 67%
 @media  (max-width: 576px)
-    .price
-        &-wrapper
-            &-img
+    body.light-mode
+        .header
+            &-bike
                 &-white
-                    display: none
                     &-small
                         display: none
                 &-black
-                    display: block
+                    display: none
                     &-small
+                        display: block
+                        width: 123%
+                        @include img-setting
+        .design
+            &-card
+                &-title
+                    color: $dark-color
+                &-text
+                    color: $dark-color
+        .price
+            &-wrapper
+                &-img
+                    &-white
                         display: none
+                        &-small
+                            display: none
+                    &-black
+                        display: block
+                        position: relative
+                        width: 100%
+                        right: 0
+                        top: 0
+                        margin-top: 30px
+                        &-small
+                            display: none
+        .swich-button
+            &-black
+                width: 50%
+                text-align: right
+                left: 145px
+            &-white
+                width: 100%

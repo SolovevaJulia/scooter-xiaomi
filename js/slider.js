@@ -11,8 +11,8 @@ const flkty = new Flickity( elem, {
 });
 
 
-const next = document.querySelector('.review-buttons-right-next'),
-    prev = document.querySelector('.review-buttons-right-prev');
+const next = document.querySelector('.review-buttons-next'),
+    prev = document.querySelector('.review-buttons-prev');
 
 next.addEventListener('click', function() {
     flkty.next();

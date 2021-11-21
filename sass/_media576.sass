@@ -1,40 +1,48 @@
 @media  (max-width: 576px)
+    .container
+        max-width: 320px
     .header
         &-bike
             &-white
                 &-small
-                    width: 400px
-                    @include img-setting
-            &-black
-                &-small
-                    width: 400px
+                    width: 110%
                     @include img-setting
         &-cover
             margin-top: 450px
+            &-heading
+                font-size: 30px
             &-text
                 font-size: 16px
         &-benefits
             &-heading
                 margin-top: 0
+                margin-top: 70px
     .swich-button
-        margin-bottom: 70px
         &-black
             width: 100%
             text-align: right
         &-white
             width: 50%
     .banner
+        background: url(../img/banner-bg-576.jpg)
+        background-size: cover
         &-wrapper
             width: 100%
         &-text
             width: 100%
     .design
         padding: 70px 0 70px 0
+        &-wrapper
+            width: 100%
+        &-title
+            width: 100%
         &-card
+            &-wrapper
+                width: 100%
             &-left
                 background: none
                 padding: 0
-                width: 90%
+                width: 100%
                 justify-content: start
                 height: auto
                 margin-bottom: 20px
@@ -42,7 +50,7 @@
             &-right
                 background: none
                 padding: 0
-                width: 90%
+                width: 100%
                 justify-content: start
                 height: auto
                 margin-bottom: 20px
@@ -55,18 +63,32 @@
             margin-bottom: 0
     .review
         padding-top: 70px
+        &-buttons
+            text-align: center
         &-ellipse
             display: none
     .carousel-cell
         width: 90%
     .mobile
+        &-descr
+            width: 100%
         &-wrapper
             flex-direction: column
         &-img
+            width: 100%
             &-white
                 margin-top: 20px
+                margin: auto
             &-black
-                margin-top: 20px
+                margin: auto
+        &-button
+            justify-content: space-between
+            margin-bottom: 20px
+            &-apple
+                margin-right: 0
+                width: 45%
+            &-google
+                width: 45%
     .brand
         background: url(../img/brand-bg-small.jpg)
         background-size: cover
@@ -95,6 +117,9 @@
                 display: flex
                 flex-direction: column
                 width: 100%
+                &-buy
+                    order: 1
+                    margin-top: 30px
             &-img
                 &-white
                     display: block
@@ -102,13 +127,9 @@
                     width: 100%
                     right: 0
                     top: 0
+                    margin-top: 30px
                     &-small
                         display: none
                 &-black
-                    display: none
-                    position: relative
-                    width: 100%
-                    right: 0
-                    top: 0
                     &-small
                         display: none

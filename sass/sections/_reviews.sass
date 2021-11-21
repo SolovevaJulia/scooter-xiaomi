@@ -34,35 +34,24 @@
                 @include small-text
 
     &-buttons
-        display: flex
-        justify-content: space-between
-        @include common-setting
         margin-top: 50px
-        &-left
-            &-btn
-                position: relative
-                z-index: 5
-                @include button
-                background-color: $text-color
-                color: #151515
-        &-right
-            display: flex
-            justify-content: space-between
-            width: 123px
-            &-prev
-                width: 54px
-                height: 54px
-                border: none
-                border-radius: 50%
-                padding: 14px
-                background-color: $text-color
-            &-next
-                width: 54px
-                height: 54px
-                border: none
-                border-radius: 50%
-                padding: 14px
-                background-color: $orange-text
+        width: 100%
+        text-align: right
+        @include common-setting
+        &-prev
+            width: 54px
+            height: 54px
+            border: none
+            border-radius: 50%
+            padding: 14px
+            background-color: $text-color
+        &-next
+            width: 54px
+            height: 54px
+            border: none
+            border-radius: 50%
+            padding: 14px
+            background-color: $orange-text
 
 .carousel-cell
     width: 30%
@@ -70,4 +59,3 @@
     background-color: #151515
     border-radius: 15px
     padding: 30px
-    height: inherit
