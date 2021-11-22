@@ -1,9 +1,8 @@
 let tab = function () {
-    let tabNav = document.querySelectorAll('.header-benefits-card'),
-        tabName;
+    let tabNav = document.querySelectorAll('.header-benefits-card');
 
     tabNav.forEach(item => {
-        item.addEventListener('click', selectTabNav)
+        item.addEventListener('click', selectTabNav);
     });
 
     function selectTabNav () {
