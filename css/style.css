@@ -45,6 +45,14 @@ ul {
   cursor: pointer;
 }
 
+.header-benefits-card.header-benefits-card-active .header-benefits-card-title {
+  border-bottom: 2px solid #FF4C0D;
+  color: #F1F1F1;
+}
+.header-benefits-card.header-benefits-card-active .header-benefits-card-text {
+  color: #F1F1F1;
+}
+
 .header {
   padding: 38px 0 120px 0;
 }
@@ -191,23 +199,14 @@ ul {
   font-size: 14px;
   line-height: 120%;
   margin-bottom: 20px;
-  padding: 0 0 15px 30px;
-}
-.header-benefits-card-title-active {
-  border-bottom: 2px solid #FF4C0D;
-  color: #F1F1F1;
-  padding: 0 20px 15px 0;
+  padding: 0 30px 15px 0;
 }
 .header-benefits-card-text {
   color: #8f7a74;
   font-weight: 500;
   font-size: 12px;
   line-height: 150%;
-  padding-left: 30px;
-}
-.header-benefits-card-text-active {
-  color: #F1F1F1;
-  padding: 0;
+  padding-right: 30px;
 }
 .header-benefits-img {
   display: flex;
